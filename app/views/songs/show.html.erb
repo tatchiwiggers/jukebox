@@ -1,0 +1,10 @@
+<h1><%= @song.title %></h1>
+<p><%= @song.year %></p>
+<p><%= @song.category %></p>
+
+<h2>Here are the reviews for this song:</h2>
+<ul>
+    <% @song.review.each do |review| %>
+        <li><%= review.content %></li>
+    <% end %>
+</ul>
